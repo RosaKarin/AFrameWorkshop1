@@ -9,12 +9,18 @@ function spin(){
 	console.log(myOtherBox.object3D.rotation);
 }
 
+function slow(){
+	myOtherBox.object3D.rotation.x += rotationSpeed;
+	myOtherBox.object3D.rotation.y += rotationSpeed;
+	myOtherBox.object3D.rotation.z += rotationSpeed;
+	console.log(myOtherBox.object3D.rotation);
+}
+
 setInterval(spin, 16);
-
-
-
 
  myOtherBox.addEventListener('mouseenter', function(){
 rotationSpeed = 0.01;
  	console.log('mouse enter');
  });
+
+
